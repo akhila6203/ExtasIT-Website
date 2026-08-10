@@ -91,11 +91,11 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2.9rem, 6vw, 5.45rem);
+  font-size: clamp(2.9rem, 4vw, 3.5rem);
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: clamp(2rem, 3vw, 2.8rem);
 }
 
 h3 {
@@ -4196,4 +4196,2406 @@ button.nav-action {
   font-size: 14px;
   color: #ef8500;
   flex-shrink: 0;
+}
+
+
+/* =========================
+   WHO WE ARE
+========================= */
+
+.who-we-are-section {
+  padding: 80px 0;
+}
+
+.who-we-are-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Content */
+
+.who-we-are-content {
+  max-width: 680px;
+}
+
+.who-we-are-content h2 {
+  margin: 12px 0 22px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+}
+
+.who-we-are-content p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5f6672;
+}
+
+.who-we-are-different {
+  margin-top: 28px;
+  padding: 24px 26px;
+  border-left: 4px solid var(--primary, #1d4ed8);
+  background: #f7f9fc;
+  border-radius: 0 12px 12px 0;
+}
+
+.who-we-are-different .panel-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary, #1d4ed8);
+}
+
+.who-we-are-different p {
+  margin-bottom: 0;
+}
+
+/* Right Image */
+
+.who-we-are-image {
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eef2f7;
+}
+
+.who-we-are-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .who-we-are-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .who-we-are-content {
+    max-width: 100%;
+  }
+
+  .who-we-are-image {
+    min-height: 380px;
+  }
+
+  .who-we-are-image img {
+    min-height: 380px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .who-we-are-section {
+    padding: 55px 0;
+  }
+
+  .who-we-are-grid {
+    gap: 30px;
+  }
+
+  .who-we-are-content h2 {
+    font-size: 30px;
+  }
+
+  .who-we-are-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .who-we-are-different {
+    padding: 20px;
+  }
+
+  .who-we-are-image {
+    min-height: 280px;
+    border-radius: 14px;
+  }
+
+  .who-we-are-image img {
+    min-height: 280px;
+  }
+}
+
+/* =========================================================
+   WEB & APPLICATION DEVELOPMENT
+   ========================================================= */
+
+.web-app-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.web-app-layout,
+.why-best-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+
+/* LEFT CONTENT */
+
+.web-app-content .section-head {
+  margin-bottom: 28px;
+}
+
+.web-app-content p {
+  margin: 0 0 20px;
+  line-height: 1.8;
+}
+
+.web-app-content p:last-child {
+  margin-bottom: 0;
+}
+.web-app-content .section-head h2,
+.why-best-content .section-head h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+/* RIGHT IMAGE */
+
+.web-app-image {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.web-app-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   WHY WE ARE THE BEST
+   ========================================================= */
+
+.why-best-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.why-best-layout {
+  align-items: center;
+}
+
+
+/* LEFT IMAGE */
+
+.why-best-image {
+  width: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.why-best-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* RIGHT CONTENT */
+
+.why-best-content .section-head {
+  margin-bottom: 28px;
+}
+
+.best-points {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.best-point {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  align-items: start;
+
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.best-point span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  padding-top: 2px;
+}
+
+.best-point p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .web-app-layout,
+  .why-best-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  /*
+    Mobile/tablet lo image first section lo content tarvatha,
+    second section lo image first ga untundi.
+  */
+
+  .web-app-image,
+  .why-best-image {
+    min-height: 380px;
+  }
+
+  .web-app-image img,
+  .why-best-image img {
+    min-height: 380px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .web-app-section,
+  .why-best-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .web-app-layout,
+  .why-best-layout {
+    gap: 35px;
+  }
+
+  .web-app-content p {
+    line-height: 1.7;
+    margin-bottom: 17px;
+  }
+
+  .web-app-image,
+  .why-best-image {
+    min-height: 280px;
+    border-radius: 14px;
+  }
+
+  .web-app-image img,
+  .why-best-image img {
+    min-height: 280px;
+  }
+
+  .best-point {
+    grid-template-columns: 35px 1fr;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+}
+
+/* =========================================
+   RECRUITMENT INTRO SECTION
+   ========================================= */
+
+.recruitment-intro-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.recruitment-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 60px;
+  align-items: center;
+}
+
+.recruitment-intro-content {
+  max-width: 720px;
+}
+
+.recruitment-intro-content h2 {
+  margin: 10px 0 24px;
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.recruitment-intro-content p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-muted, #667085);
+}
+
+.recruitment-intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* RIGHT IMAGE */
+
+.recruitment-intro-image {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  background: #f2f4f7;
+}
+
+.recruitment-intro-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    rgba(0, 0, 0, 0.08)
+  );
+  pointer-events: none;
+}
+
+.recruitment-intro-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .recruitment-intro-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .recruitment-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .recruitment-intro-content {
+    max-width: 100%;
+  }
+
+  .recruitment-intro-image {
+    min-height: 360px;
+  }
+
+  .recruitment-intro-image img {
+    min-height: 360px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .recruitment-intro-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .recruitment-intro-grid {
+    gap: 28px;
+  }
+
+  .recruitment-intro-content h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .recruitment-intro-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .recruitment-intro-image {
+    min-height: 280px;
+    border-radius: 16px;
+  }
+
+  .recruitment-intro-image img {
+    min-height: 280px;
+  }
+}
+
+/* =========================================================
+   RECRUITMENT / IT / PAYROLL SERVICES
+   ========================================================= */
+
+.recruitment-services-section {
+  position: relative;
+}
+
+.recruitment-service-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* LEFT COLUMN */
+
+.recruitment-service-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.premium-service-card,
+.payroll-service-card {
+  position: relative;
+  border: 1px solid rgba(20, 34, 52, 0.09);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(20, 34, 52, 0.07);
+  overflow: hidden;
+}
+
+.service-card-top,
+.payroll-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 28px 30px 22px;
+}
+
+.service-number {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eef5fa;
+  color: #173f68;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.service-card-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #6d7c8b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.premium-service-card h3,
+.payroll-service-card h3 {
+  margin: 0;
+  color: #172b3f;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.2;
+}
+
+/* CARD CONTENT */
+
+.service-card-content {
+  padding: 0 30px 30px;
+}
+
+.service-highlight {
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #f5f8fb;
+  color: #263d52;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.service-subsection {
+  margin-top: 25px;
+}
+
+.service-subsection h4 {
+  margin: 0 0 16px;
+  color: #173f68;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* INDUSTRIES */
+
+.industry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.industry-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+
+.industry-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: #2c78a8;
+}
+
+.industry-item strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #243b50;
+  font-size: 15px;
+}
+
+.industry-item p {
+  margin: 0;
+  color: #657485;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* IT SERVICES */
+
+.it-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.it-service-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 58px;
+  padding: 12px 15px;
+  border: 1px solid rgba(20, 34, 52, 0.08);
+  border-radius: 12px;
+  background: #f9fbfd;
+}
+
+.it-service-item span {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #e9f2f8;
+  color: #173f68;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.it-service-item strong {
+  color: #2b4054;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* PAYROLL CARD */
+
+.payroll-service-card {
+  background: #f8fafc;
+  padding-bottom: 12px;
+}
+
+.payroll-card-header {
+  padding-bottom: 20px;
+}
+
+.payroll-intro {
+  margin: 0 30px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(20, 34, 52, 0.07);
+}
+
+.payroll-intro p {
+  margin: 0;
+  color: #536477;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.payroll-features {
+  padding: 24px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payroll-feature {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(20, 34, 52, 0.08);
+}
+
+.payroll-feature:last-child {
+  border-bottom: 0;
+}
+
+.payroll-feature > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  border-radius: 8px;
+  background: #eaf2f7;
+  color: #173f68;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.payroll-feature h4 {
+  margin: 0 0 5px;
+  color: #263d52;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.payroll-feature p {
+  margin: 0;
+  color: #687788;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* HOVER */
+
+.premium-service-card,
+.payroll-service-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.premium-service-card:hover,
+.payroll-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(20, 34, 52, 0.11);
+  border-color: rgba(44, 120, 168, 0.18);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .recruitment-service-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .payroll-service-card {
+    margin-top: 0;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .recruitment-services-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .recruitment-service-layout {
+    gap: 20px;
+  }
+
+  .recruitment-service-main {
+    gap: 20px;
+  }
+
+  .service-card-top,
+  .payroll-card-header {
+    padding: 22px 20px 18px;
+    gap: 13px;
+  }
+
+  .service-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 11px;
+  }
+
+  .premium-service-card h3,
+  .payroll-service-card h3 {
+    font-size: 21px;
+  }
+
+  .service-card-content {
+    padding: 0 20px 22px;
+  }
+
+  .service-highlight {
+    padding: 13px 15px;
+    font-size: 14px;
+  }
+
+  .industry-item p {
+    font-size: 13px;
+  }
+
+  .payroll-intro {
+    margin: 0 20px;
+    padding: 15px 16px;
+  }
+
+  .payroll-features {
+    padding: 18px 20px 12px;
+  }
+
+  .payroll-feature {
+    grid-template-columns: 30px 1fr;
+    gap: 11px;
+    padding: 14px 0;
+  }
+
+  .payroll-feature h4 {
+    font-size: 13px;
+  }
+
+  .payroll-feature p {
+    font-size: 12.5px;
+  }
+
+  .it-service-item {
+    min-height: 52px;
+    padding: 10px 12px;
+  }
+}
+/* =========================================================
+   HR SOLUTIONS
+   ========================================================= */
+
+.hr-solutions-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.hr-solutions-section .section-head {
+  margin-bottom: 38px;
+}
+
+.hr-solutions-section .section-head h2 {
+  max-width: 760px;
+}
+
+
+/* =========================================================
+   MAIN TWO COLUMN LAYOUT
+   ========================================================= */
+
+.hr-solutions-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   COMMON CARD
+   ========================================================= */
+
+.hr-services-card,
+.hr-training-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(20, 36, 55, 0.09);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(20, 36, 55, 0.08);
+}
+
+.hr-services-card {
+  padding: 32px;
+}
+
+.hr-card-heading,
+.training-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hr-card-number {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #f1f5f9;
+  color: #1e3a5f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hr-card-heading h3,
+.training-card-top h3 {
+  margin: 3px 0 0;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.hr-service-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 28px;
+}
+
+.hr-service-item {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 15px;
+  border: 1px solid rgba(20, 36, 55, 0.08);
+  border-radius: 14px;
+  background: #fafbfc;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.hr-service-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(30, 58, 95, 0.18);
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(20, 36, 55, 0.08);
+}
+
+.hr-service-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #eef3f8;
+  color: #1e3a5f;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hr-service-item h4 {
+  margin: 0;
+  color: #182b3d;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 650;
+}
+
+
+/* =========================================================
+   RIGHT TRAINING CARD
+   ========================================================= */
+
+.hr-training-card {
+  padding: 32px;
+}
+
+.training-card-top {
+  margin-bottom: 22px;
+}
+
+.training-domain-content {
+  margin-top: 0;
+}
+
+.training-domain-content h4 {
+  margin: 0 0 15px;
+  color: #182b3d;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.domain-tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.domain-tags span {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 10px;
+  border: 1px solid rgba(20, 36, 55, 0.09);
+  border-radius: 11px;
+  background: #f7f9fb;
+  color: #425466;
+  text-align: center;
+  font-size: 12.5px;
+  line-height: 1.3;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.domain-tags span:hover {
+  transform: translateY(-2px);
+  background: #eef3f8;
+  color: #1e3a5f;
+  box-shadow: 0 7px 18px rgba(20, 36, 55, 0.06);
+}
+
+@media (max-width: 900px) {
+
+  .hr-solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-services-card,
+  .hr-training-card {
+    padding: 28px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hr-solutions-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .hr-services-card,
+  .hr-training-card {
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .hr-services-card::before,
+  .hr-training-card::before {
+    left: 24px;
+    right: 24px;
+  }
+
+  .hr-card-heading,
+  .training-card-top {
+    gap: 13px;
+  }
+
+  .hr-card-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hr-card-heading h3,
+  .training-card-top h3 {
+    font-size: 22px;
+  }
+
+  .hr-service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .domain-tags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .domain-tags span {
+    min-height: 40px;
+    font-size: 11.5px;
+    padding: 8px 6px;
+  }
+}
+
+
+.training-page .subpage-main {
+    min-width: 0;
+}
+
+
+/* Paragraph spacing */
+
+.training-page .subpage-main > p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   WHY IT'S CRUCIAL
+   FULL WIDTH OF LEFT CONTENT
+   ========================================================= */
+
+.training-page .training-why-box {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+
+    margin: 38px 0 42px;
+    padding: 28px 30px;
+
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.045);
+}
+
+
+/* Heading */
+
+.training-page .training-why-box strong {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    font-size: 26px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    color: #17191c;
+}
+
+
+/* Content */
+
+.training-page .training-why-box span {
+    display: block;
+    width: 100%;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #5f656b;
+}
+
+
+/* =========================================================
+   CORPORATE TRAINING BLOCK
+   ========================================================= */
+
+.training-page .training-content-block {
+    width: 100%;
+    margin-top: 42px;
+}
+
+
+.training-page .training-content-block h2 {
+    margin-bottom: 15px;
+}
+
+
+.training-page .training-content-block p {
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TRAINING TAGS
+   ========================================================= */
+
+.training-page .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    margin-top: 20px;
+}
+
+
+.training-page .tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 13px;
+
+    border: 1px solid #e2e5e8;
+    border-radius: 30px;
+
+    background: #f7f8f9;
+
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   STUDENTS + RECRUITMENT
+   TWO BOXES SIDE BY SIDE
+   ========================================================= */
+
+.training-page .training-service-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin-top: 42px;
+}
+
+
+/* Individual box */
+
+.training-page .training-service-box {
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 26px 27px;
+
+    background: #fff;
+
+    border: 1px solid #e4e7ea;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.training-page .training-service-box:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Box heading */
+
+.training-page .training-service-box strong {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+
+    color: #17191c;
+}
+
+
+/* Box content */
+
+.training-page .training-service-box > span {
+    display: block;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: #5f656b;
+}
+
+
+/* Tags inside student box */
+
+.training-page .training-service-box .tag-list {
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   WHY CHOOSE SERVICES
+   ========================================================= */
+
+.training-page .training-content-block:last-child {
+    margin-top: 44px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .training-page .training-service-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .training-page .training-why-box {
+        margin: 32px 0 36px;
+        padding: 23px 21px;
+    }
+
+
+    .training-page .training-why-box strong {
+        font-size: 22px;
+    }
+
+
+    .training-page .training-why-box span {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    .training-page .training-service-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+        margin-top: 34px;
+    }
+
+
+    .training-page .training-service-box {
+        padding: 22px 20px;
+    }
+
+
+    .training-page .training-service-box strong {
+        font-size: 19px;
+    }
+
+}
+
+.recruitment-service-layout {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 26px;
+
+    width: 100%;
+
+    margin-top: 34px;
+
+    /* Important:
+       cards should NOT stretch to equal height */
+    align-items: start;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.recruitment-service-layout .premium-service-card {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 5px 20px rgba(20, 30, 40, 0.045);
+
+    align-self: start;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.recruitment-service-layout .premium-service-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #d9dde1;
+
+    box-shadow:
+        0 10px 28px rgba(20, 30, 40, 0.075);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.recruitment-service-layout .service-card-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding-bottom: 21px;
+
+    margin-bottom: 21px;
+
+    border-bottom: 1px solid #eceef0;
+}
+
+
+.recruitment-service-layout .service-number {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 9px;
+
+    background: #f4f5f6;
+
+    color: #25292d;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.recruitment-service-layout .service-card-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    line-height: 1.3;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.09em;
+
+    font-weight: 700;
+
+    color: #7b8187;
+}
+
+
+.recruitment-service-layout .service-card-top h3 {
+    margin: 0;
+
+    font-size: 23px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #17191c;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.recruitment-service-layout .service-card-content {
+    width: 100%;
+}
+
+
+/* =========================================================
+   RECRUITMENT CONTENT
+========================================================= */
+
+.recruitment-service-layout .service-highlight {
+    margin: 0 0 23px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 600;
+
+    color: #33383d;
+}
+
+
+.recruitment-service-layout .service-subsection h4 {
+    margin: 0 0 16px;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #17191c;
+}
+
+
+.recruitment-service-layout .industry-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+.recruitment-service-layout .industry-item {
+    display: grid;
+
+    grid-template-columns: 7px minmax(0, 1fr);
+
+    gap: 11px;
+
+    align-items: start;
+}
+
+
+.recruitment-service-layout .industry-dot {
+    width: 7px;
+    height: 7px;
+
+    margin-top: 7px;
+
+    border-radius: 50%;
+
+    background: #555b61;
+}
+
+
+.recruitment-service-layout .industry-item strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #252a2f;
+}
+
+
+.recruitment-service-layout .industry-item p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color: #70767c;
+}
+
+
+/* =========================================================
+   IT SERVICES
+   ONLY NATURAL HEIGHT NEEDED
+========================================================= */
+
+.recruitment-service-layout .it-service-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.recruitment-service-layout .it-service-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px 16px;
+
+    border: 1px solid #e7e9eb;
+
+    border-radius: 9px;
+
+    background: #fafafa;
+}
+
+
+.recruitment-service-layout .it-service-item > span {
+    flex-shrink: 0;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #858b91;
+}
+
+
+.recruitment-service-layout .it-service-item strong {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    color: #252a2f;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .recruitment-service-layout {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        align-items: start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .recruitment-service-layout {
+        margin-top: 27px;
+    }
+
+
+    .recruitment-service-layout .premium-service-card {
+        padding: 22px 20px;
+
+        border-radius: 11px;
+    }
+
+
+    .recruitment-service-layout .service-card-top {
+        gap: 13px;
+
+        padding-bottom: 18px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .recruitment-service-layout .service-number {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    .recruitment-service-layout .service-card-top h3 {
+        font-size: 21px;
+    }
+
+}
+/* =========================================
+   Payroll Management Section
+========================================= */
+
+.payroll-management-section {
+  padding: 70px 0;
+  background: #f8fafc;
+}
+
+.payroll-management-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.payroll-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.payroll-heading .section-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 15px;
+  border-radius: 30px;
+  background: #eef4ff;
+  color: #2457c5;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.payroll-heading h2 {
+  margin: 0 0 15px;
+  color: #1d2939;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.payroll-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Grid */
+
+.payroll-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+
+.payroll-service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  min-height: 175px;
+  padding: 28px 24px;
+  background: #ffffff;
+  border: 1px solid #e7ebf0;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(16, 24, 40, 0.05);
+  transition: all 0.3s ease;
+}
+
+.payroll-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #d7e2f7;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.09);
+}
+
+/* Icon */
+
+.payroll-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #eef4ff;
+  color: #2457c5;
+  font-size: 20px;
+}
+
+.payroll-card-content {
+  flex: 1;
+}
+
+.payroll-card-content h3 {
+  margin: 2px 0 10px;
+  color: #1d2939;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.payroll-card-content p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 991px) {
+
+  .payroll-management-section {
+    padding: 55px 0;
+  }
+
+  .payroll-heading {
+    margin-bottom: 35px;
+  }
+
+  .payroll-heading h2 {
+    font-size: 30px;
+  }
+
+  .payroll-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .payroll-service-card {
+    padding: 24px 20px;
+  }
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 767px) {
+
+  .payroll-management-section {
+    padding: 45px 0;
+  }
+
+  .payroll-management-section .container {
+    width: 92%;
+  }
+
+  .payroll-heading {
+    margin-bottom: 28px;
+  }
+
+  .payroll-heading .section-tag {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .payroll-heading h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .payroll-heading p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .payroll-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .payroll-service-card {
+    min-height: auto;
+    padding: 22px 18px;
+    gap: 15px;
+  }
+
+  .payroll-icon {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
+
+  .payroll-card-content h3 {
+    font-size: 17px;
+  }
+
+  .payroll-card-content p {
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+}
+/* =========================================================
+   WEB DESIGN & DEVELOPMENT PAGE
+   PAGE-SPECIFIC CSS
+   ========================================================= */
+
+/* Main content wrapper */
+.webdev-page {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0 70px;
+}
+
+.webdev-page *,
+.webdev-page *::before,
+.webdev-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.webdev-intro {
+  width: min(100%, 1080px);
+  margin: 0 auto 55px;
+  padding: 0 10px;
+}
+
+.webdev-section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+
+  border: 1px solid #dce5f3;
+  border-radius: 30px;
+
+  background: #f3f6fb;
+  color: #315bb5;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+}
+
+.webdev-intro h2 {
+  margin: 0 0 22px;
+
+  color: #182230;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.webdev-intro-content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.webdev-intro-content p {
+  margin: 0 0 17px;
+
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.webdev-reach {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 6px;
+  padding: 12px 18px;
+
+  border-left: 3px solid #315bb5;
+  border-radius: 0 7px 7px 0;
+
+  background: #f7f9fc;
+}
+
+.webdev-reach span {
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SERVICES WRAPPER
+   ========================================================= */
+
+.webdev-services {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.webdev-service-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #e5e9ef;
+  border-radius: 13px;
+
+  box-shadow: 0 5px 20px rgba(16, 24, 40, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.webdev-card-top {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  margin-bottom: 21px;
+}
+
+.webdev-icon {
+  flex: 0 0 50px;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #eef4ff;
+  color: #315bb5;
+
+  font-size: 21px;
+}
+
+.webdev-number {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+
+  letter-spacing: 1px;
+}
+
+.webdev-card-top h3 {
+  margin: 0;
+
+  color: #182230;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.webdev-card-body {
+  width: 100%;
+}
+
+.webdev-card-body p {
+  margin: 0 0 15px;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.webdev-card-body p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Main bullet list */
+
+.webdev-card-body > ul {
+  margin: 18px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.webdev-card-body > ul li {
+  position: relative;
+
+  margin-bottom: 9px;
+  padding-left: 23px;
+
+  color: #475467;
+
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.webdev-card-body > ul li:last-child {
+  margin-bottom: 0;
+}
+
+.webdev-card-body > ul li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #315bb5;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   WEBSITE MAINTENANCE
+   FULL WIDTH CARD
+   ========================================================= */
+
+.webdev-maintenance-card {
+  grid-column: 1 / -1;
+}
+
+.webdev-maintenance-list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 22px;
+}
+
+.webdev-list-group {
+  min-width: 0;
+
+  padding: 17px 18px;
+
+  background: #fafbfc;
+
+  border: 1px solid #e8ecf1;
+  border-radius: 9px;
+}
+
+.webdev-list-group h4 {
+  margin: 0;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.webdev-list-group ul {
+  margin: 11px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.webdev-list-group ul li {
+  position: relative;
+
+  margin-bottom: 7px;
+  padding-left: 19px;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.webdev-list-group ul li:last-child {
+  margin-bottom: 0;
+}
+
+.webdev-list-group ul li::before {
+  content: "•";
+
+  position: absolute;
+  left: 1px;
+  top: 0;
+
+  color: #315bb5;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   INTERNAL BOTTOM CTA
+   ========================================================= */
+
+.webdev-bottom-cta {
+  width: min(100%, 1080px);
+  min-height: 130px;
+
+  margin: 42px auto 0;
+  padding: 30px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: #182230;
+
+  border-radius: 13px;
+
+  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.09);
+}
+
+.webdev-cta-small {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #aab8d0;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.webdev-bottom-cta h2 {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  .webdev-page {
+    padding-top: 15px;
+  }
+
+  .webdev-intro {
+    width: 100%;
+    padding: 0 24px;
+    margin-bottom: 42px;
+  }
+
+  .webdev-services {
+    width: 100%;
+    padding: 0 24px;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .webdev-maintenance-card {
+    grid-column: auto;
+  }
+
+  .webdev-service-card {
+    padding: 25px;
+  }
+
+  .webdev-maintenance-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .webdev-bottom-cta {
+    width: calc(100% - 48px);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .webdev-page {
+    padding: 10px 0 45px;
+  }
+
+  .webdev-intro {
+    width: 100%;
+    padding: 0 18px;
+    margin-bottom: 32px;
+  }
+
+  .webdev-section-label {
+    margin-bottom: 9px;
+    padding: 5px 11px;
+
+    font-size: 9px;
+  }
+
+  .webdev-intro h2 {
+    margin-bottom: 17px;
+
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .webdev-intro-content p {
+    margin-bottom: 14px;
+
+    font-size: 13.5px;
+    line-height: 1.75;
+  }
+
+  .webdev-reach {
+    max-width: 100%;
+
+    margin-top: 4px;
+    padding: 11px 14px;
+  }
+
+  .webdev-reach span {
+    font-size: 13px;
+  }
+
+
+  /* Services */
+
+  .webdev-services {
+    width: 100%;
+    padding: 0 18px;
+
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .webdev-service-card {
+    width: 100%;
+    padding: 21px 18px;
+
+    border-radius: 10px;
+  }
+
+  .webdev-card-top {
+    gap: 13px;
+    margin-bottom: 17px;
+  }
+
+  .webdev-icon {
+    flex: 0 0 44px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+  }
+
+  .webdev-number {
+    font-size: 9px;
+  }
+
+  .webdev-card-top h3 {
+    font-size: 17px;
+  }
+
+  .webdev-card-body p {
+    font-size: 13px;
+    line-height: 1.72;
+  }
+
+  .webdev-card-body > ul li {
+    font-size: 13px;
+  }
+
+
+  /* Maintenance */
+
+  .webdev-maintenance-list {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 17px;
+  }
+
+  .webdev-list-group {
+    padding: 13px 14px;
+  }
+
+  .webdev-list-group h4 {
+    font-size: 13px;
+  }
+
+  .webdev-list-group ul li {
+    font-size: 12.5px;
+  }
+
+
+  /* Bottom CTA */
+
+  .webdev-bottom-cta {
+    width: calc(100% - 36px);
+    min-height: auto;
+
+    margin: 30px auto 0;
+    padding: 24px 17px;
+
+    border-radius: 10px;
+  }
+
+  .webdev-bottom-cta h2 {
+    font-size: 18px;
+  }
 }

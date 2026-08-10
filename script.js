@@ -1,10 +1,10 @@
 // const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
-// const APP_BASE = '/ExtasIT';
-// const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
-const APP_BASE = '';
+const APP_BASE = '/ExtasIT';
+const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
+// const APP_BASE = '';
 
-const appUrl = (path) =>
-  `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
+// const appUrl = (path) =>
+//   `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 
 
 
@@ -36,7 +36,7 @@ function headerMarkup() {
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
         <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
-<img class="brand-logo-image" src="/assets/extasit-logo.png" alt="ExtasIT">
+  <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
 </a>
         <ul class="nav-links" id="primary-menu">
           <li><a class="nav-link" data-page="home" href="index.html">Home</a></li>
@@ -55,7 +55,7 @@ function headerMarkup() {
             <div class="dropdown-menu dropdown-wide" id="services-menu">
               <a href="it-services.html"><strong>IT Services</strong><small>Web, mobile, and business applications</small></a>
               <a href="web-design-development.html"><strong>Web & Application Development</strong><small>Responsive, effective digital experiences</small></a>
-              <a href="training.html"><strong>Training</strong><small>Technical, corporate, and career learning</small></a>
+              <a href="services-training.html"><strong>Training</strong><small>Technical, corporate, and career learning</small></a>
               <a href="recruitment-services.html"><strong>Recruitment Services</strong><small>Permanent, contract, RPO, and search</small></a>
               <a href="payroll-management.html"><strong>Payroll Management</strong><small>Accurate payroll and compliance support</small></a>
               <a href="hr-solutions.html"><strong>End-to-End HR Solutions</strong><small>Complete employee lifecycle support</small></a>
@@ -153,7 +153,7 @@ function footerMarkup() {
           <ul class="footer-links">
             <li><a href="it-services.html">IT Services</a></li>
             <li><a href="web-design-development.html">Web & Application Development</a></li>
-            <li><a href="training.html">Training</a></li>
+            <li><a href="services-training.html">Training</a></li>
             <li><a href="recruitment-services.html">Recruitment Services</a></li>
             <li><a href="payroll-management.html">Payroll Management</a></li>
             <li><a href="hr-solutions.html">End-to-End HR Solutions</a></li>

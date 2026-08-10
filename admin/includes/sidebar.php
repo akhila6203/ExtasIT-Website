@@ -8,7 +8,7 @@ $admin = adminSession();
 <aside class="admin-sidebar" id="adminSidebar">
   <div class="admin-sidebar-brand">
     <div class="admin-brand-card">
-      <img src="<?= base_url('/assets/extasit-logo1.png') ?>" alt="ExtasIT">
+      <img src="<?= base_url('/assets/logo2.png') ?>" alt="ExtasIT">
     </div>
   </div>
 
