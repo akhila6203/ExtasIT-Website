@@ -1,6 +1,5 @@
 // const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
-// const APP_BASE = '/ExtasIT';
-const APP_BASE = '';
+const APP_BASE = '/ExtasIT';
 const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 // const APP_BASE = '';
 
@@ -39,6 +38,7 @@ function headerMarkup() {
         <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
   <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
 </a>
+
         <ul class="nav-links" id="primary-menu">
           <li><a class="nav-link" data-page="home" href="index.html">Home</a></li>
           <li class="nav-item has-dropdown">
