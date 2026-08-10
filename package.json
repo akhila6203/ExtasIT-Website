@@ -1,0 +1,17 @@
+{
+  "name": "extasit-company-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "create-admin-credentials": "node tools/create-admin-credentials.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.1.1"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.7.0"
+  }
+}

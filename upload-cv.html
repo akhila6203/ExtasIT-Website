@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit your CV to the ExtasIT talent community for relevant technology, HR, business, and engineering opportunities.">
+  <title>Upload Your CV | ExtasIT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body data-page="career-upload">
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="page-hero banner-upload">
+      <div class="page-hero-mark" aria-hidden="true">CV</div>
+      <div class="container reveal">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><a href="careers.html">Careers</a><span>/</span><span>Upload CV</span>
+        </nav>
+        <span class="eyebrow">Join our talent community</span>
+        <h1>Share your profile with ExtasIT.</h1>
+        <p>Tell us about your experience, preferred career area, and the roles you want to explore across India and Europe.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Your next opportunity</span>
+          <h2>Help us understand where you fit best</h2>
+          <p>Your professional summary and CV make it easier to consider your profile when a relevant client requirement becomes available.</p>
+          <div class="contact-points">
+            <div class="contact-point"><strong>Relevant matching</strong><span>Profiles can be considered by role, skill, domain, location, and employment model.</span></div>
+            <div class="contact-point"><strong>Multiple industries</strong><span>Technology, BFSI, automotive, manufacturing, engineering, healthcare, telecom, and retail.</span></div>
+            <div class="contact-point"><strong>India & Europe</strong><span>Recruitment experience across both Indian and European markets.</span></div>
+          </div>
+        </div>
+
+        <form class="form-card reveal" data-cv-form action="api/submit-cv.php" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="jobId" value="">
+          <div class="selected-job-note" data-selected-job hidden></div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="candidate-name">Full name</label>
+              <input id="candidate-name" name="name" autocomplete="name" maxlength="120" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="candidate-email">Email address</label>
+              <input id="candidate-email" name="email" type="email" autocomplete="email" maxlength="190" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="candidate-phone">Phone number</label>
+              <input id="candidate-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="career-area">Preferred area</label>
+              <select id="career-area" name="area" required>
+                <option value="">Select an area</option>
+                <option>Software development</option>
+                <option>Cloud, data &amp; DevOps</option>
+                <option>HR &amp; recruitment</option>
+                <option>Engineering</option>
+                <option>Business &amp; consulting</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full">
+              <label for="candidate-experience">Professional experience</label>
+              <input id="candidate-experience" name="experience" maxlength="100" placeholder="For example: 3 years" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full">
+              <label for="candidate-message">Professional summary</label>
+              <textarea id="candidate-message" name="message" maxlength="3000" placeholder="Briefly describe your experience and preferred roles." required></textarea>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full honeypot" aria-hidden="true">
+              <label for="candidate-website">Website</label>
+              <input id="candidate-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field full">
+              <span class="field-label">CV or resume</span>
+              <div class="upload-area">
+                <input id="cv-file" name="cv" type="file" accept=".pdf,.doc,.docx" required>
+                <p><label for="cv-file">Choose a file</label> or drag it here</p>
+                <small>PDF, DOC, or DOCX · Maximum 4 MB</small>
+                <div class="file-name" aria-live="polite"></div>
+              </div>
+            </div>
+            <div class="field full">
+              <button class="btn btn-primary" type="submit">Submit application</button>
+              <p class="form-note">Your application and CV will be stored securely for the recruitment team.</p>
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore current ExtasIT career opportunities and apply online.">
+  <title>Find Your Job | ExtasIT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="jobs.js"></script>
+</head>
+<body data-page="career-jobs">
+  <div data-site-header></div>
+  <main id="main-content">
+    <section class="page-hero banner-jobs"><div class="page-hero-mark" aria-hidden="true">J</div><div class="container reveal">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="careers.html">Careers</a><span>/</span><span>Find Your Job</span></nav>
+      <span class="eyebrow">Current opportunities</span><h1>Find where your skills can create value.</h1><p>Explore verified roles published by the ExtasIT recruitment team and apply securely online.</p>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Open positions</span><h2>Grow your career with ExtasIT</h2><p>Job listings on this page are managed directly through the secure administrator portal.</p></div><a class="btn btn-primary" href="upload-cv.html">Join our talent network</a></div>
+      <div class="career-toolbar reveal" aria-label="Filter jobs">
+        <button class="filter-btn active" data-dynamic-job-filter="All">All jobs</button>
+        <button class="filter-btn" data-dynamic-job-filter="Technology">Technology</button>
+        <button class="filter-btn" data-dynamic-job-filter="Business &amp; HR">Business &amp; HR</button>
+        <button class="filter-btn" data-dynamic-job-filter="Engineering">Engineering</button>
+        <button class="filter-btn" data-dynamic-job-filter="Consulting">Consulting</button>
+      </div>
+      <div class="public-jobs-grid" data-public-jobs><div class="jobs-loading">Loading current opportunities…</div></div>
+      <div class="empty-jobs" data-public-jobs-empty hidden>No active jobs match this filter. You can still join our talent network.</div>
+    </div></section>
+
+    <section class="section"><div class="container cta-band reveal"><div class="cta-layout"><div><h2>Cannot find the right opening?</h2><p>Share your profile and preferred career area for future opportunities.</p></div><a class="btn btn-light" href="upload-cv.html">Share your CV</a></div></div></section>
+  </main>
+  <div data-site-footer></div>
+
+  <div class="job-details-modal admin-login-overlay" data-job-details-modal hidden>
+    <section class="job-details-panel admin-login-panel" role="dialog" aria-modal="true" aria-labelledby="public-job-title">
+      <div class="admin-login-top">
+        <span class="eyebrow">Career opportunity</span>
+        <button type="button" class="admin-login-close" data-close-job-details aria-label="Close job details">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <div data-job-details-content></div>
+      <footer><button class="btn btn-secondary" type="button" data-close-job-details>Close</button><button class="btn btn-primary" type="button" data-job-apply>Apply for this role</button></footer>
+    </section>
+  </div>
+
+  <div class="job-apply-modal admin-login-overlay" data-job-apply-modal hidden>
+    <section class="job-apply-panel admin-login-panel" role="dialog" aria-modal="true" aria-labelledby="job-apply-title">
+      <div class="admin-login-top">
+        <div><span class="eyebrow">Apply now</span><h2 id="job-apply-title">Apply for this role</h2><p data-apply-job-subtitle></p></div>
+        <button type="button" class="admin-login-close" data-close-job-apply aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <form data-job-apply-form action="api/submit-cv.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="jobId" data-apply-job-id>
+        <input type="hidden" name="job_id" data-apply-job-id-secondary>
+        <input type="hidden" name="area" value="Job application">
+        <div class="form-grid">
+          <div class="field"><label>Full name *</label><input name="name" required></div>
+          <div class="field"><label>Email *</label><input name="email" type="email" required></div>
+          <div class="field"><label>Phone *</label><input name="phone" required></div>
+          <div class="field"><label>Experience *</label><input name="experience" placeholder="e.g. 3 years" required></div>
+          <div class="field full"><label>Current company</label><input name="current_company"></div>
+          <div class="field full"><label>Cover letter / message *</label><textarea name="message" rows="4" required></textarea></div>
+          <div class="field full"><label>CV / Resume * <small>(PDF, DOC, DOCX · max 4 MB)</small></label><input name="cv" type="file" accept=".pdf,.doc,.docx" required></div>
+          <div class="field full"><button class="btn btn-primary" type="submit">Submit Application</button><div class="form-status" data-apply-status></div></div>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
