@@ -30,8 +30,8 @@ function headerMarkup() {
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
         <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
-          <a class="brand" href="index.html"><img class="brand-logo-image" src="assets/extasit-logo1.png" alt="ExtasIT"></a>
-        </a>
+    <img class="brand-logo-image" src="./assets/extasit-logo1.png" alt="ExtasIT">
+</a>
         <ul class="nav-links" id="primary-menu">
           <li><a class="nav-link" data-page="home" href="index.html">Home</a></li>
           <li class="nav-item has-dropdown">
