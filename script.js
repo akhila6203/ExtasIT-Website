@@ -1,5 +1,6 @@
 // const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
-const APP_BASE = '/ExtasIT';
+// const APP_BASE = '/ExtasIT';
+const APP_BASE = '';
 const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 // const APP_BASE = '';
 
