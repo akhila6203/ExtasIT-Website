@@ -1,6 +1,12 @@
 // const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
-const APP_BASE = '/ExtasIT';
-const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
+// const APP_BASE = '/ExtasIT';
+// const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
+const APP_BASE = '';
+
+const appUrl = (path) =>
+  `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
+
+
 
 const icons = {
   briefcase: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 12h18M10 12v2h4v-2"/></svg>',
@@ -30,7 +36,7 @@ function headerMarkup() {
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
         <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
-    <img class="brand-logo-image" src="./assets/extasit-logo1.png" alt="ExtasIT">
+<img class="brand-logo-image" src="/assets/extasit-logo1.png" alt="ExtasIT">
 </a>
         <ul class="nav-links" id="primary-menu">
           <li><a class="nav-link" data-page="home" href="index.html">Home</a></li>
