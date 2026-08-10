@@ -15,7 +15,7 @@ $activeNav = $activeNav ?? 'dashboard';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= htmlspecialchars($pageTitle) ?> | ExtasIT Admin</title>
-  <link rel="icon" type="image/jpeg" href="<?= base_url('/assets/extasit-logo.png') ?>">
+  <link rel="icon" type="image/jpeg" href="<?= base_url('/assets/logo1.png') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
