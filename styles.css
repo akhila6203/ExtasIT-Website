@@ -185,10 +185,19 @@ body {
   overflow: visible;
 }
 
-.brand-header .brand-logo-image {
+/* .brand-header .brand-logo-image {
   width: 174px;
+} */
+.brand-header .brand-logo-image {
+  display: block !important;
+  width: 174px !important;
+  height: auto !important;
+  max-width: 174px !important;
+  max-height: 60px !important;
+  object-fit: contain !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
-
 .brand-tagline {
   margin-top: 2px;
   color: #5e6e79;
