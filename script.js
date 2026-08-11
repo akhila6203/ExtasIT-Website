@@ -40,7 +40,7 @@ function headerMarkup() {
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
        <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
-  <img class="brand-logo-image" src="assets/extasit-logo.png" alt="ExtasIT">
+  <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
 </a>
 
         <ul class="nav-links" id="primary-menu">
