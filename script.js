@@ -1,11 +1,13 @@
 // const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
-const APP_BASE = '/ExtasIT';
-const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
-// const APP_BASE = '';
+// const APP_BASE = '/ExtasIT';
+// const appUrl = (path) => `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 
-// const appUrl = (path) =>
-//   `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 
+
+const APP_BASE = window.location.pathname.startsWith('/ExtasIT/') ? '/ExtasIT' : '';
+
+const appUrl = (path) =>
+  `${APP_BASE}${path.startsWith('/') ? path : `/${path}`}`;
 
 
 const icons = {
@@ -26,7 +28,9 @@ const companyDetails = {
   whatsapp: "9441616455",
 };
 
-
+//        <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
+//   <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
+// </a>
 
 const dropdownChevron = '<svg class="dropdown-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>';
 
@@ -35,8 +39,8 @@ function headerMarkup() {
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
-        <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
-  <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
+ <a class="brand brand-header" href="${appUrl('/index.html')}" aria-label="ExtasIT home">
+  <img class="brand-logo-image" src="${appUrl('/assets/logo2.png')}" alt="ExtasIT">
 </a>
 
         <ul class="nav-links" id="primary-menu">
