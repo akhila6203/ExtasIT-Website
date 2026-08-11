@@ -39,8 +39,8 @@ function headerMarkup() {
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <nav class="navbar container" aria-label="Primary navigation">
- <a class="brand brand-header" href="${appUrl('/index.html')}" aria-label="ExtasIT home">
-  <img class="brand-logo-image" src="${appUrl('/assets/logo2.png')}" alt="ExtasIT">
+       <a class="brand brand-header" href="index.html" aria-label="ExtasIT home">
+  <img class="brand-logo-image" src="assets/logo2.png" alt="ExtasIT">
 </a>
 
         <ul class="nav-links" id="primary-menu">
