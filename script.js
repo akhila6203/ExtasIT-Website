@@ -21,8 +21,9 @@ const icons = {
 
 
 const companyDetails = {
-  address: "Sai paradise, pragathi nagar, Hyderabad 500090",
-  email: "extasit01@gmail.com",
+  address: "Sai Paradise, Pragathi Nagar, Hyderabad 500090",
+  // email: "extasit01@gmail.com",
+   email: "hello@extasit.com",
   phone: "9441616455",
   phoneLink: "9441616455",
   whatsapp: "9441616455",
